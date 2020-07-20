@@ -8,7 +8,7 @@ public class Lab5Exercise3 {
 		String[] order = {"Chocolate", "Cherries"};
 		
 		c.orderCake(order, 1, 2);
-		c.printOrder(c.getSize(), c.getTotalPrice(c.getSizePrice()));
+		c.printOrder();
 		
 	}
 
