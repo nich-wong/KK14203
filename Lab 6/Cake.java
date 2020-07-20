@@ -1,4 +1,5 @@
-abstract public class Cake {
+
+public class Cake{
 	String name;
 	String[] topping, toppingOrder;
 	double priceSmall, priceMedium, priceBig, priceSize, totalPrice;
@@ -8,7 +9,12 @@ abstract public class Cake {
 		name = n;
 	}
 	
-	abstract void setCake(String[] t, double ps, double pm, double db);
+	public void setCake(String[] t, double ps, double pm, double pb){
+		topping = t;
+		priceSmall = ps;
+		priceMedium = pm;
+		priceBig = pb;
+	}
 	
 	void orderCake(String[] ts, int s, int q) {
 		toppingOrder = ts;
